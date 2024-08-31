@@ -15,7 +15,7 @@
 ┗描画入力をcanvas、描画処理をjavascriptが行う。  
  お題はJavaScriptライブラリである「ML5」からテキスト生成機能を使用してお題を表示させる！
 
-*♡絵は上手であることが全てでないことに楽しみを見出してほしい！♡*
+*♡絵は上手であることが全てでないことに楽しみを見出してほしい！♡*  
 
 
 ●Using the pictures he drew as an opportunity, he started communicating using SNS functions.  
@@ -39,7 +39,7 @@
 ┗全年齢向けに作成。みんなに楽しんでもらいたいからね。
 
 ●事前に作成・描画した画像の投稿は不可にする。  
-┗自作自演の防止、本アプリのコンセプトを楽しんでもらうため。みんなの絵画は俺が守っちゃる！
+┗自作自演の防止、本アプリのコンセプトを楽しんでもらうため。みんなの絵画は俺が守っちゃる！  
 
 
 ●We plan to add a filtering function for slander and sensitive words in messages.  
@@ -51,11 +51,12 @@
 # ER diagram
 
 ![paicommu_DB](https://github.com/user-attachments/assets/f07a434a-728c-46e2-8a5f-f84316b46b72)
+あらやだpip-boyみたいでカッコイイじゃない♡
 
 # Author
 
 * 作成者：梅木晃大
-* Xアカウント：@oshiri_itai00
+* Xアカウント：@oshiri_itai00  
 
 * Created by: Kodai Umeki
 * X account：@oshiri_itai00
