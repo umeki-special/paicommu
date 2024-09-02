@@ -50,7 +50,7 @@
 
 # ER diagram
 
-![paicommu_DB](https://github.com/user-attachments/assets/f07a434a-728c-46e2-8a5f-f84316b46b72)
+![paicommu_DB](https://github.com/user-attachments/assets/12024f41-b898-4d09-94a3-7c9f5aa786ab)
 あらやだpip-boyみたいでカッコイイじゃない♡
 
 # Author
