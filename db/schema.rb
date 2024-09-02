@@ -22,11 +22,13 @@ ActiveRecord::Schema[7.0].define(version: 2024_09_02_050111) do
   end
 
   create_table "drawings", charset: "utf8", force: :cascade do |t|
+    t.bigint "user_id", null: false
     t.text "image_data", null: false
     t.string "title", null: false
-    t.text "description", null: false
+    t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_drawings_on_user_id"
   end
 
   create_table "likes", charset: "utf8", force: :cascade do |t|
@@ -55,6 +57,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_09_02_050111) do
 
   add_foreign_key "comments", "drawings"
   add_foreign_key "comments", "users"
+  add_foreign_key "drawings", "users"
   add_foreign_key "likes", "drawings"
   add_foreign_key "likes", "users"
 end

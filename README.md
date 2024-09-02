@@ -60,3 +60,7 @@
 
 * Created by: Kodai Umeki
 * X account：@oshiri_itai00
+
+* URL：https://paicommu.onrender.com
+* ID：spicy
+* PASS：0503
