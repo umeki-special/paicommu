@@ -14,9 +14,16 @@
 &emsp;┗コミュニティの幅は増えるものの、その地に足を踏み入れてもきっかけや話題が無ければ  
 &emsp;&emsp;発信さえ難しく感じる人もいると思った。  
 &emsp;&emsp;&nbsp;┗そこで最終的にコミュニケーションが取れるきっかけ作りをサポートする本アプリを作成しようと思った。  
-&emsp;&emsp;&emsp;出来上がった暁には同じ悩みを持つ人々をコミュニティの場に導ける者なりたい。  
-&emsp;&emsp;&emsp;具体的には霊体化したオビワンみたいに「かつて私もそうでした」と言いたい。絶対嫌がられるけど。  
+&emsp;&emsp;&emsp;&nbsp;出来上がった暁には同じ悩みを持つ人々をコミュニティの場に導ける者なりたい。  
+&emsp;&emsp;&emsp;&nbsp;具体的には霊体化したオビワンみたいに「かつて私もそうでした」と言いたい。絶対嫌がられるけど。<br><br>  
 
+●In the past, when I was spending time with someone I was close to, I had an experience where I felt anxious about communication due to the awkwardness of creating a topic for conversation or having to wait for a moment of silence.  
+&nbsp;At that time, I was trying to buy books and read them. Obi-Wan has taught me well.  
+&nbsp;┗Nowadays, the internet is so popular that you can do research, and there are places where you can communicate with more people than in real life.  
+&emsp;┗Although the breadth of the community is increasing, I think some people find it difficult to spread the word even if they set foot in the area without an opportunity or topic to talk about.  
+&emsp;&emsp;&nbsp;┗Therefore, I decided to create this app to support the creation of opportunities for communication.  
+&emsp;&emsp;&emsp;&nbsp;When I am finished, I want to be able to lead people who have the same concerns to a community place.  
+&emsp;&emsp;&emsp;&nbsp;Specifically, I want to say, ``I used to be like that,'' like Obi-Wan in his spiritual form. I'm sure you'll hate it though.  
 
 # Features
 
