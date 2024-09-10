@@ -1,6 +1,14 @@
 <div class="contents row">
   <% @drawings.each do |drawing| %>
     <div class="content_post" style="background-image: url(<%= drawing.image %>);">
+      <div class="more">
+        <span><%= image_tag 'arrow_top.png' %></span>
+        <ul class="more_list">
+          <li>
+            <%= link_to '削除', /drawing_path{drawing.id}, data: { turbo_method: :delete } %>
+          </li>
+        </ul>
+      </div>
       <p><%= drawing.text %></p>
       <span class="name">
         <%= drawing.name %>
