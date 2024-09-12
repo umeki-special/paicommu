@@ -5,10 +5,10 @@
         <span><%= image_tag 'arrow_top.png' %></span>
         <ul class="more_list">
           <li>
-            <%= link_to '編集', edit_tweet_path(drawing.id) %>
+            <%= link_to '編集', edit_drawing_path(drawing.id) %>
           </li>
           <li>
-            <%= link_to '削除', /drawing_path{drawing.id}, data: { turbo_method: :delete } %>
+            <%= link_to '削除', drawing_path(drawing.id), data: { turbo_method: :delete } %>
           </li>
         </ul>
       </div>

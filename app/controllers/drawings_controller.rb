@@ -22,6 +22,12 @@ class DrawingsController < ApplicationController
     @drawing = Drawing.find(params[:id])
   end
 
+  def update
+    drawing = Drawing.find(params[:id])
+    drawing.update(drawing_params)
+    redirect_to root_path
+  end
+
   private
   def drawing_params
     params.require(:drawing).permit(:name, :image, :text)
