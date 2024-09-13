@@ -5,35 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>投稿フォーム</title>
   <!-- ml5.jsの読み込み -->
-  <script src="https://cdn.jsdelivr.net/npm/ml5@latest/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ml5/0.12.2/ml5.min.js"></script>
+  <style>
+    /* お題表示エリアのスタイル */
+    #generatedPrompt {
+      border: 2px solid #000; /* 枠線を太くして見やすく */
+      padding: 10px;
+      margin-top: 10px;
+      height: 100px; /* 高さを固定してお題が見やすいように */
+      font-size: 16px;
+      background-color: #f9f9f9; /* 背景色を追加 */
+      color: #333;
+    }
+  </style>
 </head>
 <body>
   <div class="contents row">
     <div class="container">
       <h3>投稿する</h3>
+      <!-- お題生成ボタン -->
       <button id="generatePrompt">お題を生成</button>
+      <!-- お題表示エリア -->
+      <div id="generatedPrompt">
+        お題がここに表示されます
+      </div>
       <%= form_with(model: @drawing, local: true) do |form| %>
-        <!-- ニックネーム入力欄 -->
+        <!-- テキスト入力欄 -->
         <%= form.text_area :text, placeholder: "text", rows: "10" %>
         <%= form.submit "SEND" %>
       <% end %>
-      <!-- お題生成ボタン -->
     </div>
   </div>
 
   <script>
     // AIによるお題生成（ml5.jsの利用）
     document.getElementById('generatePrompt').addEventListener('click', function() {
-      let rnn = ml5.charRNN('models/woolf/', modelReady);
+      // モデルのロードパスが正しいか確認する
+      let rnn = ml5.charRNN('path/to/model/', modelReady); // モデルのパスを正確に指定
 
       function modelReady() {
         console.log('RNNモデルが読み込まれました');
+        // ランダムテキスト生成
         rnn.generate({ seed: '描いてください', temperature: 0.5, length: 50 }, (err, result) => {
           if (err) {
-            console.error(err);
+            console.error('エラーが発生しました:', err); // エラーが発生した場合
           } else {
-            // ニックネーム入力フィールドにAI生成テキストを挿入
-            document.getElementById('nickname-field').value = result.sample;
+            console.log('生成されたお題:', result.sample); // コンソールで生成されたお題を確認
+            // お題表示エリアに生成されたテキストを挿入
+            document.getElementById('generatedPrompt').innerText = result.sample;
           }
         });
       }
