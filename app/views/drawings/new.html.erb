@@ -9,12 +9,12 @@
   <style>
     /* お題表示エリアのスタイル */
     #generatedPrompt {
-      border: 2px solid #000; /* 枠線を太くして見やすく */
+      border: 2px solid #000; 
       padding: 10px;
       margin-top: 10px;
-      height: 100px; /* 高さを固定してお題が見やすいように */
+      height: 50px; 
       font-size: 16px;
-      background-color: #f9f9f9; /* 背景色を追加 */
+      background-color: #f9f9f9; 
       color: #333;
     }
   </style>
@@ -41,7 +41,7 @@
     // AIによるお題生成（ml5.jsの利用）
     document.getElementById('generatePrompt').addEventListener('click', function() {
       // モデルのロードパスが正しいか確認する
-      let rnn = ml5.charRNN('path/to/model/', modelReady); // モデルのパスを正確に指定
+      let rnn = ml5.charRNN('https://cdn.jsdelivr.net/gh/ml5js/ml5-data-and-models/models/woolf/', modelReady);
 
       function modelReady() {
         console.log('RNNモデルが読み込まれました');
