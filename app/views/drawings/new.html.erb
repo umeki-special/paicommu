@@ -41,7 +41,7 @@
     // AIによるお題生成（ml5.jsの利用）
     document.getElementById('generatePrompt').addEventListener('click', function() {
       // モデルのロードパスが正しいか確認する
-      let rnn = ml5.charRNN('https://cdn.jsdelivr.net/gh/ml5js/ml5-data-and-models/models/woolf/', modelReady);
+      let rnn = ml5.charRNN('https://cdn.jsdelivr.net/gh/ml5js/ml5-data-and-models/models/shakespeare/', modelReady);
 
       function modelReady() {
         console.log('RNNモデルが読み込まれました');
