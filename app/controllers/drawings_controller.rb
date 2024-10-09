@@ -1,4 +1,6 @@
 class DrawingsController < ApplicationController
+  before_action :set_drawing, only: [:edit, :show]
+
   def index
     @drawings = Drawing.all
   end
@@ -19,7 +21,6 @@ class DrawingsController < ApplicationController
   end
 
   def edit
-    @drawing = Drawing.find(params[:id])
   end
 
   def update
@@ -28,9 +29,16 @@ class DrawingsController < ApplicationController
     redirect_to root_path
   end
 
+  def show
+  end
+
   private
   def drawing_params
     params.require(:drawing).permit(:name, :image, :description)
+  end
+
+  def set_drawing
+    @drawing = Drawing.find(params[:id])
   end
 
 end
